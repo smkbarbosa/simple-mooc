@@ -1,6 +1,16 @@
 from django.db import models
 
 
+'''Comentário
+
+'''
+class CourseManager(models.Manager):
+
+    def search(self, query):
+        return self.get_queryset().filter(
+            name__icontains=query, description__icontains=query
+        )
+
 class Course(models.Model):
 
     name = models.CharField('Nome', max_length=100)
@@ -18,3 +28,5 @@ class Course(models.Model):
     updated_at = models.DateTimeField(
         'Atualizado em', auto_now=True
     )
+
+    objects = CourseManager()
