@@ -17,7 +17,8 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^', include('mooc.core.urls')),
+    url(r'^', include('mooc.core.urls', namespace='core')),
+    url(r'^cursos/', include('mooc.courses.urls', namespace='courses')),
     url(r'^admin/', admin.site.urls),
 
 ]
