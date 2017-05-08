@@ -1,9 +1,6 @@
 from django.db import models
 
 
-'''Comentário
-
-'''
 class CourseManager(models.Manager):
 
     def search(self, query):
