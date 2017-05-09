@@ -1,4 +1,6 @@
-== SIMPLE MOOC ==
+SIMPLE MOOC
+-------------------------------------
+
 
 Aplicação desenvolvida no curso:
 
