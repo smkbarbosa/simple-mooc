@@ -20,11 +20,10 @@
             </div>
             <div class="pure-u-2-3">
                 <div class="l-box">
-                    <h4 class="content-subhead"><a href="">{{ course.name }}</a></h4>
-                    <!--<h3>Descubra o prazer de programar em python</h3>-->
+                    <h4 class="content-subhead">
+                        <a href="">{{ course.name }}</a>
+                    </h4>
 
-                    <!-- linebreak permite que as quebras de linha (\n) que vem do banco de dados
-                     possa ser convertido em <br>  ou <p> -->
                         {{ course.description|linebreaks }}
 
             </div>
